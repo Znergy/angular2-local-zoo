@@ -6,28 +6,35 @@
       <div class="col-md-4 scroll-img-info-box">
         <h1>A Legendary Zoo</h1>
         <p>Vivamus dictum ipsum ex, ut ullamcorper elit tincidunt id. Maecenas ac tortor ut odio pharetra tincidunt. Donec sit amet sodales est.</p>
-        <a href="#"><button type="button" class="learn-more-btn" name="button"><span class="btn-text">Learn More</span></button></a>
+        <a class="learn-more-a" href="#"><button type="button" class="learn-more-btn" name="button"><span class="btn-text">Learn More</span></button></a>
       </div>
       <div class="col-md-1"></div>
     </div>
   </div>
 </div>
 
-<div class="row well">
-  <div class="col-md-4" alt="Add animal below">
+<div class="row">
+  <div class="col-md-4 bg-1" alt="Add animal below">
+    <img class="img-responsive" src="../../assets/logo1.png" alt="logo1">
     <h3 alt="Add animal title">Add an Animal</h3>
-    <p alt="Add animal description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc urna augue, hendrerit sed dictum vitae, pretium quis eros. Pellentesque et eros ullamcorper, hendrerit augue sit amet, dapibus erat. Duis ac facilisis nibh, ac vulputate massa. Curabitur dui mauris, pharetra id ex nec, tempus vulputate eros.</p>
-    <a href="/new-animal"><button type="button" name="button" alt="Add animal button">Add Animal</button></a>
+    <p alt="Add animal description">Add an animal by clicking the button below. Add an animal by clicking the button below.</p>
+    <a class="learn-more-a" href="/new-animal"><button type="button" class="learn-more-btn" name="button" alt="Add animal button">Learn More</button></a>
   </div>
-  <div class="col-md-4" alt="Search animal below">
-    <h3 alt="Search animal title">Add an Animal</h3>
-    <p alt="Search animal description">Search for animal by typing in the animal name, below.</p>
-    <span class="glyphicon glyphicon-search"></span><input type="text" name="search" value="search">
+  <div class="col-md-4 bg-2" alt="Search animal below">
+    <img class="img-responsive" src="../../assets/logo2.png" alt="logo2">
+    <h3 alt="Search animal title">Search Animals</h3>
+    <p alt="Search animal description">Search for animal by typing in the animal name, below. Add an animal by clicking the button below.</p>
+    <a class="learn-more-a" href="/new-animal"><button type="button" class="learn-more-btn" name="button" alt="View Animals">Learn More</button></a>
+    <!-- <span class="glyphicon glyphicon-search"></span><input type="text" name="search" value="search"> -->
   </div>
-  <div class="col-md-4" alt="View animal below">
-    <h3 alt="View animal title">Add an Animal</h3>
-    <ul>
-      <li *ngFor="let animal of animals"><a href="/animal/id">{{ animal.name }}</a></li>
-    </ul>
+  <div class="col-md-4 bg-1" alt="View animal below">
+    <img class="img-responsive" src="../../assets/logo3.png" alt="logo3">
+    <h3 alt="View animal title">View Animals</h3>
+    <p>Add an animal by clicking the button below. Add an animal by clicking the button below.</p>
+    <a class="learn-more-a" href="/new-animal"><button type="button" class="learn-more-btn" name="button" alt="View Animals">Learn More</button></a>
   </div>
+</div>
+
+<div class="scrolling-text">
+  <h1>What Matters Most to Us? The Trust of Our Customers. We Work to Earn Yours.</h1>
 </div>
