@@ -1,1 +1,12 @@
-
+.main-nav { list-style-type: none; padding-left: 0px; margin-top: 12px; }
+.main-nav li { display: inline; font-size: 18px; }
+.main-nav a { color: #e6e7e8; padding-right: 25px; text-decoration: none; font-family: 'Raleway', sans-serif; font-weight: 900;}
+.main-nav a:hover { color: #fb6361; }
+.header-pane { background-color: #444444; color: #fff; }
+.header-pane h1 { margin-top: 13px; margin-bottom: 16px; }
+.header-nav { list-style-type: none; margin-top: 24px; padding-left: 0px;}
+.header-nav li { display: inline; font-size: 15px; }
+.header-nav a { padding-right: 32px; cursor: pointer; color: #e6e7e8; font-family: 'Raleway', sans-serif; text-decoration: none; }
+.header-nav a:hover { color: #fb6361; }
+.main-nav-pane { height: 50px; }
+.gi-cloud { top: 10px; color: #fb6361; }
