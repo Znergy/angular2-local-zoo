@@ -1,0 +1,20 @@
+<div class="scroll-img"></div>
+
+<div class="row well">
+  <div class="col-md-4" alt="Add animal below">
+    <h3 alt="Add animal title">Add an Animal</h3>
+    <p alt="Add animal description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc urna augue, hendrerit sed dictum vitae, pretium quis eros. Pellentesque et eros ullamcorper, hendrerit augue sit amet, dapibus erat. Duis ac facilisis nibh, ac vulputate massa. Curabitur dui mauris, pharetra id ex nec, tempus vulputate eros.</p>
+    <a href="/new-animal"><button type="button" name="button" alt="Add animal button">Add Animal</button></a>
+  </div>
+  <div class="col-md-4" alt="Search animal below">
+    <h3 alt="Search animal title">Add an Animal</h3>
+    <p alt="Search animal description">Search for animal by typing in the animal name, below.</p>
+    <span class="glyphicon glyphicon-search"></span><input type="text" name="search" value="search">
+  </div>
+  <div class="col-md-4" alt="View animal below">
+    <h3 alt="View animal title">Add an Animal</h3>
+    <ul>
+      <li *ngFor="let animal of animals"><a href="/animal/id">{{ animal.name }}</a></li>
+    </ul>
+  </div>
+</div>
