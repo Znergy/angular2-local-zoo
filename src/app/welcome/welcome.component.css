@@ -1,1 +1,10 @@
-.scroll-img { background-image: url('../../assets/scroll-img.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: scroll; height: 400px; width: 100%;}
+.scroll-img { background-image: url('../../assets/scroll-img.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: scroll; height: 400px; margin-left: -15px; margin-right: -15px;}
+.scroll-img-info-box { background-color: rgba(0,0,0,0.8); padding: 27px; border-radius: 6px; }
+.scroll-img-info-box h1 { color: #fb6361; margin-top: -10px; padding-bottom: 9px; }
+.scroll-img-info-box p { color: #fff; padding-bottom: 9px; }
+.scroll-img-info-box a { color: #f90; text-decoration: none; }
+.scroll-img-info-box a:hover { color: #fff; }
+.learn-more-btn { background-color: rgba(0,0,0,0); border: 2px solid #f90; border-radius: 2px; padding: 0.5em 1em; }
+.learn-more-btn:hover { background-color: #f90; transition: 0.6s; }
+.scroll-img-row { padding-top: 40px; }
+.btn-text { font-size: 14px; }
