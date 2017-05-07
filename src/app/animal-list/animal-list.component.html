@@ -1,0 +1,16 @@
+<h2>Animals</h2>
+
+<div *ngFor="let animal of animals | async" (click)="goToDetailPage(animal)" class="panel panel-default">
+  <div class="panel-body">
+    <ul class="animal-list-ul">
+      <li>Species: {{animal.species}}</li>
+      <li>Name: {{animal.name}}</li>
+      <li>Age: {{animal.age}}</li>
+      <li>Diet: {{animal.diet}}</li>
+      <li>Caretaker: {{animal.caretaker}}</li>
+      <li>Sex: {{animal.sex}}</li>
+      <li>Likes: {{animal.likes}}</li>
+      <li>Dislikes: {{animal.dislikes}}</li>
+    </ul>
+  </div>
+</div>
