@@ -12,16 +12,18 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ContactComponent } from './contact/contact.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AnimalListComponent } from './animal-list/animal-list.component';
 
-// export const firebaseConfig = {
-//   apiKey: masterFirebaseConfig.apiKey,
-//   authDomain: masterFirebaseConfig.authDomain,
-//   databaseURL: masterFirebaseConfig.databaseURL,
-//   storageBucket: masterFirebaseConfig.storageBucket
-// };
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -33,16 +35,17 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
     ContactComponent,
     AdminComponent,
     MarketplaceComponent,
-    AlbumDetailComponent
+    AlbumDetailComponent,
+    AnimalListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
-    // AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

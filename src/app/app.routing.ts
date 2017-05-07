@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AnimalListComponent } from './animal-list/animal-list.component';
 
 const appRoutes: Routes = [
   {
@@ -15,12 +16,16 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'new-animal',
+    path: 'animal/new',
     component: NewAnimalComponent
   },
   {
-    path: 'animal',
+    path: 'animal/:id',
     component: AnimalComponent
+  },
+  {
+    path: 'animals',
+    component: AnimalListComponent
   },
   {
     path: 'about',
