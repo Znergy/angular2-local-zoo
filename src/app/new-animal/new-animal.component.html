@@ -1,3 +1,63 @@
-<p>
-  new-animal works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add an Animal</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Species:</label>
+        <br>
+        <input #newSpecies>
+      </div>
+
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Age:</label>
+        <br>
+        <input #newAge>
+      </div>
+
+      <div>
+        <label>Diet:</label>
+        <br>
+        <textarea #newDiet></textarea>
+      </div>
+
+      <div>
+        <label>Location:</label>
+        <br>
+        <textarea #newLocation></textarea>
+      </div>
+
+      <div>
+        <label>Caretakers:</label>
+        <br>
+        <textarea #newCaretaker></textarea>
+      </div>
+
+      <div>
+        <label>Sex:</label>
+        <br>
+        <textarea #newSex></textarea>
+      </div>
+
+      <div>
+        <label>Likes:</label>
+        <br>
+        <textarea #newLikes></textarea>
+      </div>
+
+      <div>
+        <label>Dislikes:</label>
+        <br>
+        <textarea #newDislikes></textarea>
+      </div>
+      <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newCaretaker.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newAge.value=''; newName.value=''; newDiet.value=''; newCaretaker.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+    </div>
+  </div>
+</div>
