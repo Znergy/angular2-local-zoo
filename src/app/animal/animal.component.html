@@ -1,3 +1,12 @@
-<p>
-  animal works!
-</p>
+<div>
+  <h3>{{(animalToDisplay | async)?.name}}</h3>
+  <h4>{{(animalToDisplay | async)?.species}}</h4>
+  <ul class="animal-details-ul">
+    <li>{{(animalToDisplay | async)?.age}}</li>
+    <li>{{(animalToDisplay | async)?.diet}}</li>
+    <li>{{(animalToDisplay | async)?.caretaker}}</li>
+    <li>{{(animalToDisplay | async)?.sex}}</li>
+    <li>{{(animalToDisplay | async)?.likes}}</li>
+    <li>{{(animalToDisplay | async)?.dislikes}}</li>
+  </ul>
+</div>
