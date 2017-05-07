@@ -9,6 +9,19 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { AnimalComponent } from './animal/animal.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ContactComponent } from './contact/contact.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AdminComponent } from './admin/admin.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+
+// export const firebaseConfig = {
+//   apiKey: masterFirebaseConfig.apiKey,
+//   authDomain: masterFirebaseConfig.authDomain,
+//   databaseURL: masterFirebaseConfig.databaseURL,
+//   storageBucket: masterFirebaseConfig.storageBucket
+// };
 
 @NgModule({
   declarations: [
@@ -16,13 +29,18 @@ import { WelcomeComponent } from './welcome/welcome.component';
     NewAnimalComponent,
     AboutComponent,
     AnimalComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ContactComponent,
+    AdminComponent,
+    MarketplaceComponent,
+    AlbumDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    // AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
