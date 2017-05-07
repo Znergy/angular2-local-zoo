@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     component: NewAnimalComponent
   },
   {
-    path: 'animal/:id',
+    path: 'animals/:id',
     component: AnimalComponent
   },
   {
