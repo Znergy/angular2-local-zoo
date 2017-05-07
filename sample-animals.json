@@ -1,0 +1,29 @@
+{ "animals": [{
+    "species": "Snake",
+    "name": "Dakota",
+    "age": "3",
+    "diet": "corn",
+    "caretaker": "Joe",
+    "sex": "male",
+    "likes": ["tomatoes"],
+    "dislikes": ["chicken"]
+    }, {
+    "species": "Rabbit",
+    "name": "George",
+    "age": "1",
+    "diet": "chicken",
+    "caretaker": "Joe",
+    "sex": "female",
+    "likes": ["tater tots"],
+    "dislikes": ["black eye peas"]
+    }, {
+    "species": "Parrot",
+    "name": "Jenkins",
+    "age": "15",
+    "diet": "steak",
+    "caretaker": "Jack",
+    "sex": "male",
+    "likes": ["Talking"],
+    "dislikes": ["Not Talking"]
+  }]
+}
