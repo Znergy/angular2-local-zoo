@@ -10,3 +10,15 @@
 .header-nav a:hover { color: #fb6361; }
 .main-nav-pane { height: 50px; }
 .gi-cloud { top: 10px; color: #fb6361; }
+.gi-cloud-footer { color: #fb6361; font-size: 62px; }
+.footer h4 a { color: #fb6361; margin-top: 10px; }
+.footer ul { list-style-type: none; padding-left: 0px; }
+.footer a:hover { text-decoration: none; }
+.footer li a { color: #fff; }
+.footer-nav { margin-top: 16px; margin-bottom: 20px; margin-left: 0px; margin-right: 0px; }
+.footer-note { text-align: center; color: #fff; }
+.social-links li { display: inline; padding-right: 10px; }
+.fa-linkedin, .fa-github, .fa-rss { color: #262626; }
+.content-container { padding-left: 0px; padding-right: 0px; }
+.header-logo-a { color: #fff; }
+.header-logo-a:hover { text-decoration: none; }
