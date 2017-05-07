@@ -10,7 +10,7 @@ import { AnimalService } from '../animal.service';
   styleUrls: ['./animal.component.css'],
   providers: [ AnimalService ]
 })
-export class AnimalComponent {
+export class AnimalComponent implements OnInit {
   animalId: string;
   animalToDisplay;
 
