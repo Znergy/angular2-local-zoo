@@ -2,6 +2,12 @@
 
 Local zoo is a project I built over a weekend using Angular 2, Firebase, and REST API.
 
+## General Setup
+* npm install
+* bower install
+* setup firebase
+* ng serve
+
 ## Firebase Setup
 
 * Create an account with Firebase
@@ -9,9 +15,10 @@ Local zoo is a project I built over a weekend using Angular 2, Firebase, and RES
 * Setup firebase for a web application
 * Create a file called, api-keys.ts, in the app directory (app/api-keys.ts)
 * Copy the example code below, and add in your credentials
+* Once the api-keys.ts file is setup, you need to import the file into app.module.ts
 
 ## Firebase api-keys.ts code
-
+```
 export var masterFirebaseConfig = {
   apiKey: "xxxxxxxxxxxxxxxxxxxxx",
   authDomain: "xxxxxxxxxxxx",
@@ -20,6 +27,7 @@ export var masterFirebaseConfig = {
   storageBucket: "xxxxxxxxx",
   messagingSenderId: "xxxxxxxxxxx"
 };
+```
 
 ## Development server
 
