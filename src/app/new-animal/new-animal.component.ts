@@ -16,6 +16,7 @@ export class NewAnimalComponent {
   submitForm(newSpecies: string, newName: string, newAge: string, newDiet: string, newCaretaker: string, newSex: string, newLikes: string, newDislikes: string) {
     var newAnimal: Animal = new Animal(newSpecies, newName, newAge, newDiet, newCaretaker, newSex, newLikes, newDislikes);
     this.animalService.addAnimal(newAnimal);
+    window.location.href = '/animals';
   }
 
 }

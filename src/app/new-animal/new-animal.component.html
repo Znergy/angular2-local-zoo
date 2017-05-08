@@ -1,63 +1,70 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Add an Animal</h3>
-  </div>
-  <div class="panel-body">
-    <div>
-      <div>
-        <label>Species:</label>
-        <br>
-        <input #newSpecies>
+<div class="animal-form-page">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add an Animal</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group row">
+            <label for="species" class="col-2 col-form-label">Species</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newSpecies>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="name" class="col-2 col-form-label">Name</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newName>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="age" class="col-2 col-form-label">Age</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newAge>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="diet" class="col-2 col-form-label">Diet</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newDiet>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="location" class="col-2 col-form-label">Location</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newLocation>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="caretaker" class="col-2 col-form-label">Caretaker</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newCaretaker>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="sex" class="col-2 col-form-label">Sex</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newSex>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="likes" class="col-2 col-form-label">Likes</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newLikes>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="dislikes" class="col-2 col-form-label">Dislikes</label>
+            <div class="col-10">
+              <input class="form-control" type="text" #newDislikes>
+            </div>
+          </div>
+          <button class="new-animal-btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newCaretaker.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newAge.value=''; newName.value=''; newDiet.value=''; newCaretaker.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+        </div>
       </div>
-
-      <div>
-        <label>Name:</label>
-        <br>
-        <input #newName>
-      </div>
-
-      <div>
-        <label>Age:</label>
-        <br>
-        <input #newAge>
-      </div>
-
-      <div>
-        <label>Diet:</label>
-        <br>
-        <textarea #newDiet></textarea>
-      </div>
-
-      <div>
-        <label>Location:</label>
-        <br>
-        <textarea #newLocation></textarea>
-      </div>
-
-      <div>
-        <label>Caretakers:</label>
-        <br>
-        <textarea #newCaretaker></textarea>
-      </div>
-
-      <div>
-        <label>Sex:</label>
-        <br>
-        <textarea #newSex></textarea>
-      </div>
-
-      <div>
-        <label>Likes:</label>
-        <br>
-        <textarea #newLikes></textarea>
-      </div>
-
-      <div>
-        <label>Dislikes:</label>
-        <br>
-        <textarea #newDislikes></textarea>
-      </div>
-      <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newCaretaker.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newAge.value=''; newName.value=''; newDiet.value=''; newCaretaker.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
     </div>
+    <div class="col-md-2"></div>
   </div>
 </div>
