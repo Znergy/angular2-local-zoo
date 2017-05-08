@@ -1,14 +1,24 @@
-<div>
-  <h3>{{(animalToDisplay | async)?.name}}</h3>
-  <h4>{{(animalToDisplay | async)?.species}}</h4>
-  <ul class="animal-details-ul">
-    <li>{{(animalToDisplay | async)?.age}}</li>
-    <li>{{(animalToDisplay | async)?.diet}}</li>
-    <li>{{(animalToDisplay | async)?.caretaker}}</li>
-    <li>{{(animalToDisplay | async)?.sex}}</li>
-    <li>{{(animalToDisplay | async)?.likes}}</li>
-    <li>{{(animalToDisplay | async)?.dislikes}}</li>
-  </ul>
+<div class="animal-info">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 rx">
+      <img src="../../assets/logo4.png" alt="Zebra">
+    </div>
+    <div class="col-md-3">
+      <h3>{{(animalToDisplay | async)?.name}} the {{(animalToDisplay | async)?.species}}</h3>
+      <ul class="animal-details-ul">
+        <li>Name: {{(animalToDisplay | async)?.name}}</li>
+        <li>Species: {{(animalToDisplay | async)?.species}}</li>
+        <li>Age: {{(animalToDisplay | async)?.age}}</li>
+        <li>Diet: {{(animalToDisplay | async)?.diet}}</li>
+        <li>Caretaker: {{(animalToDisplay | async)?.caretaker}}</li>
+        <li>Sex: {{(animalToDisplay | async)?.sex}}</li>
+        <li>Likes: {{(animalToDisplay | async)?.likes}}</li>
+        <li>Dislikes: {{(animalToDisplay | async)?.dislikes}}</li>
+      </ul>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
 </div>
 
 <!-- <ul class="animal-list-ul">
