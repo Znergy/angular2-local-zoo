@@ -21,4 +21,19 @@ export class AnimalService {
   getAnimalById(animalId: string){
     return this.db.object('animals/' + animalId);
   }
+
+  updateAnimal(localAnimal) {
+    // problem getting the $key..
+    var animalFromDatabase = this.getAnimalById(localAnimal.$key);
+    animalFromDatabase.update({
+      species: localAnimal.species,
+      name: localAnimal.name,
+      age: localAnimal.age,
+      diet: localAnimal.diet,
+      caretaker: localAnimal.caretaker,
+      sex: localAnimal.sex,
+      likes: localAnimal.likes,
+      dislikes: localAnimal.dislikes
+    });
+  }
 }
