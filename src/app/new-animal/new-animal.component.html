@@ -7,61 +7,63 @@
           <h3 class="panel-title">Add an Animal</h3>
         </div>
         <div class="panel-body">
-          <div class="form-group row">
-            <label for="species" class="col-2 col-form-label">Species</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newSpecies>
+          <form name="animalForm">
+            <div class="form-group row">
+              <label for="species" class="col-2 col-form-label">Species</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newSpecies required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="name" class="col-2 col-form-label">Name</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newName>
+            <div class="form-group row">
+              <label for="name" class="col-2 col-form-label">Name</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newName required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="age" class="col-2 col-form-label">Age</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newAge>
+            <div class="form-group row">
+              <label for="age" class="col-2 col-form-label">Age</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newAge required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="diet" class="col-2 col-form-label">Diet</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newDiet>
+            <div class="form-group row">
+              <label for="diet" class="col-2 col-form-label">Diet</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newDiet required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="location" class="col-2 col-form-label">Location</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newLocation>
+            <div class="form-group row">
+              <label for="location" class="col-2 col-form-label">Location</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newLocation required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="caretaker" class="col-2 col-form-label">Caretaker</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newCaretaker>
+            <div class="form-group row">
+              <label for="caretaker" class="col-2 col-form-label">Caretaker</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newCaretaker required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="sex" class="col-2 col-form-label">Sex</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newSex>
+            <div class="form-group row">
+              <label for="sex" class="col-2 col-form-label">Sex</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newSex required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="likes" class="col-2 col-form-label">Likes</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newLikes>
+            <div class="form-group row">
+              <label for="likes" class="col-2 col-form-label">Likes</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newLikes required>
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="dislikes" class="col-2 col-form-label">Dislikes</label>
-            <div class="col-10">
-              <input class="form-control" type="text" #newDislikes>
+            <div class="form-group row">
+              <label for="dislikes" class="col-2 col-form-label">Dislikes</label>
+              <div class="col-10">
+                <input class="form-control" name="animalInput" ng-model="animalInput" type="text" #newDislikes required>
+              </div>
             </div>
-          </div>
-          <button class="new-animal-btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newCaretaker.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newAge.value=''; newName.value=''; newDiet.value=''; newCaretaker.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+            <button class="new-animal-btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newCaretaker.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newAge.value=''; newName.value=''; newDiet.value=''; newCaretaker.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+          </form>
         </div>
       </div>
     </div>
