@@ -2,3 +2,4 @@
 .animal-detail .row { margin-left: 0px; margin-right: 0px; margin-bottom: 10px; }
 .animal-detail-box { color: #FB6361; background-color: #262626; padding: 10px; text-align: center; border: 2px solid #FB6361; }
 .animal-detail-box:hover { background-color: #FB6361; color: #fff; cursor: pointer; }
+.animal-detail { margin-top: 30px; }
