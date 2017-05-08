@@ -1,6 +1,25 @@
 # LocalZoo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
+Local zoo is a project I built over a weekend using Angular 2, Firebase, and REST API.
+
+## Firebase Setup
+
+* Create an account with Firebase
+* Create a new project
+* Setup firebase for a web application
+* Create a file called, api-keys.ts, in the app directory (app/api-keys.ts)
+* Copy the example code below, and add in your credentials
+
+## Firebase api-keys.ts code
+
+export var masterFirebaseConfig = {
+  apiKey: "xxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxx",
+  databaseURL: "xxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxx",
+  storageBucket: "xxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxx"
+};
 
 ## Development server
 
