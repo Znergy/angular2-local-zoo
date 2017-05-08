@@ -2,6 +2,12 @@
 
 Local zoo is a project I built over a weekend using Angular 2, Firebase, and REST API.
 
+## Project Requirements
+* npm (node package manager) ($ brew install -g node)
+* bower (front-end dependencies) ($ npm install -g bower)
+* firebase (backend)
+* angular cli ($ npm install -g angular-cli)
+
 ## General Setup
 * npm install
 * bower install
@@ -29,27 +35,32 @@ export var masterFirebaseConfig = {
 };
 ```
 
-## Development server
+## Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* [Angular 2]
+* [Node.js]
+* [REST]
+* [Firebase]
+* [JavaScript]
+* [HTML]
+* [CSS]
 
-## Code scaffolding
+## License
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+This project is licensed under the MIT License - [license]
 
-## Build
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Running unit tests
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Copyright (c) 2017 Local Zoo
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[Angular 2]: https://angular.io/
+[Node.js]: https://nodejs.org/en/
+[REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
+[Firebase]: https://firebase.google.com/
+[JavaScript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[HTML]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[CSS]: https://developer.mozilla.org/en-US/docs/Web/CSS
