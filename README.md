@@ -2,6 +2,9 @@
 
 Local zoo is a project I built over a weekend using Angular 2, Firebase, and REST API.
 
+## Hosted documentation
+https://local-zoo.firebaseapp.com/
+
 ## Project Requirements
 * npm (node package manager) ($ brew install -g node)
 * bower (front-end dependencies) ($ npm install -g bower)
