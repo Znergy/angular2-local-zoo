@@ -1,17 +1,21 @@
-<!-- <div *ngFor="let animal of animals | async" (click)="goToDetailPage(animal)" class="panel panel-default">
-  <div class="panel-body">
-    <h3>{{animal.name}} the {{animal.species}}</h3>
-  </div>
-</div> -->
-
-<div *ngFor="let animal of animals | async" (click)="goToDetailPage(animal)" class="animal-detail">
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <div class="animal-detail-box">
-        <h2>{{animal.name}} the {{animal.species}}</h2>
+<div class="animal-list-options">
+  <h1>Filter Animals</h1>
+  <ul class="list-options">
+    <li><a class="filter-option" (click)="filter = 'all';">All Animals |</a></li>
+    <li><a class="filter-option" (click)="filter = 'young';">Young Animals |</a></li>
+    <li><a class="filter-option" (click)="filter = 'old';">Old Animals</a></li>
+  </ul>
+</div>
+<div class="animal-search">
+  <div *ngFor="let animal of animals | searchList:filter" (click)="goToDetailPage(animal)" class="animal-detail">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="animal-detail-box">
+          <h2>{{animal.name}} the {{animal.species}}</h2>
+        </div>
       </div>
+      <div class="col-md-3"></div>
     </div>
-    <div class="col-md-3"></div>
   </div>
 </div>

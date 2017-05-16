@@ -2,7 +2,7 @@ export class Animal {
   constructor (
     public species: string,
     public name: string,
-    public age: string,
+    public age: number,
     public diet: string,
     public caretaker: string,
     public sex: string,

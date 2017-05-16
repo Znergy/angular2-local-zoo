@@ -3,3 +3,8 @@
 .animal-detail-box { color: #FB6361; background-color: #262626; padding: 10px; text-align: center; border: 2px solid #FB6361; }
 .animal-detail-box:hover { background-color: #FB6361; color: #fff; cursor: pointer; }
 .animal-detail { margin-top: 30px; }
+.filter-option { text-decoration: none; cursor: pointer; color: #fff; }
+.filter-option:hover { color: #ccc; }
+.list-options { list-style-type: none; padding-left: 0px; text-align: center;}
+.list-options li { display: inline; padding-right: 10px; font-size: 25px; }
+.animal-list-options h1 { text-align: center; color: #fff; padding-bottom: 10px; }

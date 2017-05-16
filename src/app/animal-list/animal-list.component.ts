@@ -12,12 +12,13 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 
 export class AnimalListComponent implements OnInit {
-  animals: FirebaseListObservable<any[]>;
+  animals: Animal[];
+  filter: string = 'all';
 
   constructor(private router: Router, private animalService: AnimalService){}
 
   ngOnInit() {
-    this.animals = this.animalService.getAnimals();
+    this.animalService.getAnimals().subscribe(animals => this.animals = animals);
   }
 
   goToDetailPage(clickedAnimal) {
